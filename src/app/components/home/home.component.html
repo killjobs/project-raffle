@@ -1,0 +1,18 @@
+  <mat-drawer-container class="example-container" [hasBackdrop]="true">
+    <mat-drawer #drawer mode="push"><app-menu></app-menu></mat-drawer>
+    <mat-drawer-content>
+      <button mat-raised-button (click)="drawer.toggle()">Menú</button>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>Rifa</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <app-jugador></app-jugador>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>Jugar!!!</button>
+            <button mat-button>Es Ganador!!!</button>
+          </mat-card-actions>
+        </mat-card>
+    </mat-drawer-content>
+  </mat-drawer-container>
