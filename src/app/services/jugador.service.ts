@@ -4,11 +4,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class JugadorService {
+  public participantes: any[]= [];
 
   constructor() { }
 
+  setJugadores(participantes:any[]){
+    this.participantes = participantes;
+  }
+
   getJugadores(){
-    return [
+    return this.participantes;/*[
       {
         nombre:'Julian David Gil',
         documento: '158976542',
@@ -40,16 +45,15 @@ export class JugadorService {
         telefono:'59663214',
         ganador:0,
         presentar:false
-      }]
+      }]*/
   }
   getJugador(){
-    return {
+    return this.participantes[0];/*{
         nombre:'Julian David Gil',
         documento: '158976542',
         correo:'jdgm_dddsi@yahoo.com',
         telefono:'3955266874',
         ganador:0,
-        presentar:false
+        presentar:false*/
     }
-  }
 }

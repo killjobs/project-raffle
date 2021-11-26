@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { JugadorComponent } from './components/jugador/jugador.component';
 import { ParticipantesComponent } from './components/participantes/participantes.component';
+import { CargarParticipantesComponent } from './components/cargar-participantes/cargar-participantes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ParticipantesComponent } from './components/participantes/participantes
     HomeComponent,
     MenuComponent,
     JugadorComponent,
-    ParticipantesComponent
+    ParticipantesComponent,
+    CargarParticipantesComponent
   ],
   imports: [
     BrowserModule,

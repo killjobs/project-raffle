@@ -1,6 +1,9 @@
 <h2>Datos del participante</h2>
 <mat-card class="example-card"[class.ganador]="jugadorIn.ganador">
-    <mat-card-title [matBadge]="jugadorIn.ganador" matBadgeSize="large" [matBadgeHidden]="!jugadorIn.presentar">{{jugadorIn.nombre}}</mat-card-title>
+    <mat-card-title 
+        [matBadge]="jugadorIn.ganador" 
+        matBadgeSize="large" 
+        [matBadgeHidden]="!jugadorIn.presentar">{{jugadorIn.nombre}}</mat-card-title>
     <mat-card-content>
         <p>
             Correo: {{jugadorIn.correo}}<br/>

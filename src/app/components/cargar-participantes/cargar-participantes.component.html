@@ -1,0 +1,17 @@
+<p>
+    Usa el archivo de guia para cargar los participantes.<br/>
+    <a mat-raised-button download="DocumentoGuia.xlsx"
+       href="https://docs.google.com/spreadsheets/d/1kHsLsmkgpjJchMK4HE2n_tLdbEQ4k1GE/edit?usp=drive_web&ouid=102629444036304274260&rtpof=true"
+       target="_blank"
+    >Decargar guía</a>
+</p>
+
+Cargar Excel:<input type="file" mat-flat-button (change)="onFileChange($event)" multiple="false"/>
+<h1 *ngIf="data.length>0">Usuarios cargados</h1>
+<table>
+    <tr *ngFor="let row of data">
+        <td *ngFor="let cell of row">
+            {{cell}}
+        </td>
+    </tr>
+</table>

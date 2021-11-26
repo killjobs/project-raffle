@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<mat-card class="example-card" *ngIf="participantes.length > 0">
   <mat-card-header>
     <mat-card-title>RIFA MES DE DICIEMBRE</mat-card-title>
   </mat-card-header>
@@ -16,4 +16,9 @@
     <button mat-button (click)="selecionarJugador()">Jugar!!!</button>
     <button mat-button (click)="marcarGanador()">Es Ganador!!!</button>
   </mat-card-actions>
+</mat-card>
+<mat-card class="example-card" *ngIf="participantes.length == 0">
+  <mat-card-content>
+    <h1>Es necesario cargar participantes para poder jugar la la rifa</h1>
+  </mat-card-content>
 </mat-card>
